@@ -1,0 +1,7 @@
+set system root-authentication encrypted-password juniper123
+set system login user root uid 2000
+set system login user root class super-user
+set system login user authentication encrypted-password juniper123
+set system services ssh
+set system services netconf ssh
+set interfaces ge-0/0/0 unit 0 family inet address 192.168.0.51/24

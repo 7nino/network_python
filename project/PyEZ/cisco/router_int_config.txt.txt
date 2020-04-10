@@ -1,0 +1,11 @@
+conf t
+interface {{ int_name }}
+ip address {{ ip_add }}
+no shutdown
+exit
+router ospf {{ ospf_number }}
+router-id {{ router_id }}
+network {{ network_ip }} area {{area_number }}
+end
+
+

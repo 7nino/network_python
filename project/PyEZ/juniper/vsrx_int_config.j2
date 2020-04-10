@@ -1,0 +1,7 @@
+set interfaces {{ int_name }} unit 0 family inet address {{ int_ipv4_addr }}
+set protocols ospf area {{ area_number }} interfaces {{ int_name }}.0
+set security zones security-zone {{ zone_name }} interfaces {{ int_name }}.0
+set security zones security-zone {{ zone_name }} host-inbound-traffic system-services ping
+set security zones security-zone {{ zone_name }} host-inbound-traffic protocols ospf
+
+

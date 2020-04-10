@@ -1,0 +1,9 @@
+telnet server enable
+user-interface vty 0 4
+protocol inbound telnet
+authentication-mode aaa
+quit
+aaa
+local-user admin password sim admin1234
+local-user admin service-type telnet
+local-user admin privilege level 3

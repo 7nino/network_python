@@ -1,0 +1,4 @@
+set security policies from-zone {{ source_zone }} to-zone {{ dest_zone }} policy intra-zone-policy match source-address {{ source_addr }}
+set security policies from-zone {{ source_zone }} to-zone {{ dest_zone }} policy intra-zone-policy match destination-address {{ dest_addr }}
+set security policies from-zone {{ source_zone }} to-zone {{ dest_zone }} policy intra-zone-policy match application {{ app }}
+set security policies from-zone {{ source_zone }} to-zone {{ dest_zone }} policy intra-zone-policy then {{ action }}
